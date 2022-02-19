@@ -19,3 +19,9 @@
   conference: ICCV 2021
   paper_link: https://arxiv.org/pdf/2105.01646.pdf
   image: /img/2021_motionfit.png
+
+- title: "Hand gesture recognition using 802.11ad mmWave sensor in the mobile device"
+  authors: Y Ren, J Lu, A Beletchi, Y Huang, I Karmanov, D Dijkman
+  conference: IEEE WCNC 2021
+  paper_link: https://ieeexplore.ieee.org/abstract/document/9419978
+  image: /img/2021_handgesture.png
