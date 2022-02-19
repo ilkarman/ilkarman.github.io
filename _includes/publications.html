@@ -17,11 +17,17 @@
           {{item.authors}}
           <br/>
 
-          {% if item.pdf_link %} 
-          <a target="_blank" href="{{ item.pdf_link }}">[PDF]</a> &nbsp;
+          {{item.conference}}
+          <br/>
+
+          {% if item.paper_link %} 
+          <a target="_blank" href="{{ item.paper_link }}">[PDF]</a> &nbsp;
           {% endif %} 
 
-  
+          {% if item.supplemental_link %} 
+          <a target="_blank" href="{{ item.supplemental_link }}">[PDF]</a> &nbsp;
+          {% endif %} 
+
           {% if item.video_link %} 
           <a target="_blank" href="{{ item.video_link }}">[Video]</a> &nbsp;
           {% endif %}
