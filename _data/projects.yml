@@ -1,4 +1,4 @@
-- date: 01/2022
-  content: test
-- date: 12/2021
-  contentent: other test
+- title: "Deep Learning Framework Comparisons"
+  abstract: Comparison of many deep-learning frameworks
+  link: https://github.com/ilkarman/DeepLearningFrameworks
+  image: /img/2018_dl_frameworks.png
