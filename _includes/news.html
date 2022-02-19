@@ -1,7 +1,8 @@
-<div class="notelist">
-    {% for post in site.yml.news %}
-    <ul class="listnotes list-unstyled">
-      <li>{{post.date}}: {{post.content}}</li>
-    </ul>
-    {% endfor %}
-</div>
+<div class="item">
+  <h3 class="text-muted">Recent News</h3>
+  
+  <ul class="recent_news">
+      {% for item in site.yml.news %}
+          <li>{{ item.date }}: {{ item.content }}</li>
+      {% endfor %}
+  </ul>
