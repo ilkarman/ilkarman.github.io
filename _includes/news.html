@@ -1,4 +1,4 @@
-<div class="news_main">
+<div class="news">
     {% for post in site.yml.news %}
     <ul class="news">
       <li>{{ post.date | date_to_string }}: {{post.content}}</li>
