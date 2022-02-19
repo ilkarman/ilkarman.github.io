@@ -1,4 +1,10 @@
-- date: 01/2022
-  content: test
 - date: 12/2021
-  contentent: other test
+  content: Our work on weakly-supervised WiFi positioning has been featured as <a href="https://www.youtube.com/watch?v=8Qu-qVBhKZU">YouTube Demo</a> by Qualcomm
+- date: 09/2021
+  content: Our paper <a href="https://proceedings.neurips.cc/paper/2021/hash/569ff987c643b4bedf504efda8f786c2-Abstract.html">OT Isomap</a> has been accepted to NeurIPS 2021
+- date: 08/2021
+  content: Our paper <a href="https://arxiv.org/abs/2107.01002">WiCluster</a> has been accepted to IEEE Globecom 2021
+- date: 07/2021
+  content: Our paper <a href="https://arxiv.org/abs/2105.01646">MotionFit</a> has been accepted to ICCV 2021
+- date: 06/2021
+  content: Our work on RF Sensing has been featured as a <a href="https://youtu.be/xNmnqCsvMTU">YouTube Demo</a> at MWC 2021
