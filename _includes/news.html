@@ -1,0 +1,7 @@
+<div class="news">
+    {% for post in site.news %}
+    <ul class="news">
+      <li>{{ post.date | date_to_string }}: {{post.content}}</li>
+    </ul>
+    {% endfor %}
+</div>
