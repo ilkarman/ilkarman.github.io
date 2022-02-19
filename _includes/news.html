@@ -1,7 +1,7 @@
-<div class="news">
+<div class="notelist">
     {% for post in site.yml.news %}
-    <ul class="news">
-      <li>{{ post.date | date_to_string }}: {{post.content}}</li>
+    <ul class="listnotes list-unstyled">
+      <li>{{post.date}}: {{post.content}}</li>
     </ul>
     {% endfor %}
 </div>
