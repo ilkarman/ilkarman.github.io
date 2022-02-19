@@ -6,8 +6,8 @@
 
       {% for item in site.data.publications %}
       <tr>
-      <td style="padding:2.5%; width:25%; vertical-align:middle; min-width:120px">
-      <img src="{{item.image}}" style="width:auto; height:auto; max-width:100%; border:{{item.image_border}};">
+      <td style="padding:2.5%; width:40%; vertical-align:middle; min-width:120px">
+      <img src="{{item.image}}" style="width:auto; height:auto; max-width:100%;">
       </td>
 
       <td style="padding:2.5%; width:75%; vertical-align:middle">
@@ -21,11 +21,11 @@
           <br/>
 
           {% if item.paper_link %} 
-          <a target="_blank" href="{{ item.paper_link }}">[PDF]</a> &nbsp;
+          <a target="_blank" href="{{ item.paper_link }}">[Paper PDF]</a> &nbsp;
           {% endif %} 
 
           {% if item.supplemental_link %} 
-          <a target="_blank" href="{{ item.supplemental_link }}">[PDF]</a> &nbsp;
+          <a target="_blank" href="{{ item.supplemental_link }}">[Supplemental PDF]</a> &nbsp;
           {% endif %} 
 
           {% if item.video_link %} 

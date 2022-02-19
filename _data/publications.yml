@@ -1,4 +1,4 @@
-- title: Modality-Agnostic Topology Aware Localization
+- title: "Modality-Agnostic Topology Aware Localization"
   authors: FG Zanjani, I Karmanov, H Ackermann, D Dijkman, S Merlin, M Welling, F Porikli
   conference: NeurIPS 2021
   paper_link: https://proceedings.neurips.cc/paper/2021/file/569ff987c643b4bedf504efda8f786c2-Paper.pdf
@@ -6,7 +6,15 @@
   video_link: https://www.youtube.com/watch?v=8Qu-qVBhKZU
   image: /img/2021_ot_isomap.png
 
-- title: Motion-Augmented Self-Training for Video Recognition at Smaller Scale
+- title: "WiCluster: Passive Indoor 2D/3D Positioning using WiFi without Precise Labels"
+  authors: I Karmanov, F Zanjani, S Merlin, I Kadampot, D Dijkman
+  conference: IEEE GLOBECOM 2021
+  paper_link: https://arxiv.org/pdf/2107.01002.pdf
+  video_link: https://www.youtube.com/watch?v=8Qu-qVBhKZU
+  image: /img/2021_wicluster.png
+
+
+- title: "Motion-Augmented Self-Training for Video Recognition at Smaller Scale"
   authors: K Gavrilyuk, M Jain, I Karmanov, C Snoek
   conference: ICCV 2021
   paper_link: https://arxiv.org/pdf/2105.01646.pdf
