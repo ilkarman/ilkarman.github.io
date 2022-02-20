@@ -4,23 +4,23 @@
   paper_link: https://proceedings.neurips.cc/paper/2021/file/569ff987c643b4bedf504efda8f786c2-Paper.pdf
   supplemental_link: https://proceedings.neurips.cc/paper/2021/file/569ff987c643b4bedf504efda8f786c2-Supplemental.pdf
   video_link: https://www.youtube.com/watch?v=8Qu-qVBhKZU
-  image: /img/2021_ot_isomap.png
+  image: /img/projects/2021_ot_isomap.png
 
 - title: "WiCluster: Passive Indoor 2D/3D Positioning using WiFi without Precise Labels"
   authors: I Karmanov, F Zanjani, S Merlin, I Kadampot, D Dijkman
   conference: IEEE GLOBECOM 2021
   paper_link: https://arxiv.org/pdf/2107.01002.pdf
   video_link: https://www.youtube.com/watch?v=8Qu-qVBhKZU
-  image: /img/2021_wicluster.png
+  image: /img/projects/2021_wicluster.png
 
 - title: "Motion-Augmented Self-Training for Video Recognition at Smaller Scale"
   authors: K Gavrilyuk, M Jain, I Karmanov, C Snoek
   conference: ICCV 2021
   paper_link: https://arxiv.org/pdf/2105.01646.pdf
-  image: /img/2021_motionfit.png
+  image: /img/projects/2021_motionfit.png
 
 - title: "Hand gesture recognition using 802.11ad mmWave sensor in the mobile device"
   authors: Y Ren, J Lu, A Beletchi, Y Huang, I Karmanov, D Dijkman
   conference: IEEE WCNC 2021
   paper_link: https://ieeexplore.ieee.org/abstract/document/9419978
-  image: /img/2021_handgesture.png
+  image: /img/projects/2021_handgesture.png

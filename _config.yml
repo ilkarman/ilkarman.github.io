@@ -1,3 +1,4 @@
 permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
-imagesurl: "/img/personal/"
+images_personal_url: "/img/personal/"
+images_projects_url: "/img/projects/"
