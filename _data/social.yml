@@ -2,19 +2,19 @@ email:
   id: 'ilia.uk@gmail.com'
   href: 'mailto:'
   title: 'Email'
-  fa-icon: 'fa-envelope-square'
+  fa-icon: 'fa-envelope'
 
 github:
   id: 'ilkarman'
   href: 'https://github.com/'
   title: 'GitHub'
-  fa-icon: 'fa-github-square'
+  fa-icon: 'fa-github'
 
 linkedin:
   id: 'ilia-karmanov-09aa588b'
-  href: 'https://www.linkedin.com/'
+  href: 'https://www.linkedin.com/in/'
   title: 'LinkedIn'
-  fa-icon: 'fa-linkedin-square'
+  fa-icon: 'fa-linkedin'
 
 instagram:
   id: 'ilia.uk'
