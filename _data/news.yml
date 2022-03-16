@@ -1,5 +1,6 @@
-- date: 12/2021
-  content: Our work on weakly-supervised WiFi positioning has been featured as <a href="https://www.youtube.com/watch?v=8Qu-qVBhKZU">YouTube Demo</a> by Qualcomm
+- date: 15/2022
+  content: Our work on 3D positioning has been featured as part of the 'AI Firsts' <a href="<a href="https://arxiv.org/abs/2105.01646">MotionFit</a>">list</a> by Qualcommm and an accompanying <a href="https://www.youtube.com/watch?v=8Qu-qVBhKZU">YouTube Demo</a>.
+
 - date: 09/2021
   content: Our paper <a href="https://proceedings.neurips.cc/paper/2021/hash/569ff987c643b4bedf504efda8f786c2-Abstract.html">OT Isomap</a> has been accepted to NeurIPS 2021
 - date: 08/2021
