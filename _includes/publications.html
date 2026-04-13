@@ -1,40 +1,40 @@
-<div class="item">
+<div class="publications-list">
+    {% assign current_year = "" %}
+    {% for item in site.data.publications %}
+        {% if item.year != current_year %}
+            {% assign current_year = item.year %}
+            <h3 class="year-heading">{{ current_year }}</h3>
+        {% endif %}
 
-  <h3 class="text-muted">Publications</h3>
+        <div class="pub-card {% if item.highlight %}pub-highlight{% endif %}">
+            {% if item.highlight %}
+            <span class="pub-badge featured">{{ item.venue_badge }}</span>
+            {% elsif item.venue_badge %}
+            <span class="pub-badge">{{ item.venue_badge }}</span>
+            {% endif %}
 
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <h4 class="pub-title">{{ item.title }}</h4>
+            <p class="pub-authors">{{ item.authors }}</p>
+            <p class="pub-venue">{{ item.conference }}</p>
 
-      {% for item in site.data.publications %}
-      <tr>
-      <td style="padding:2.5%; width:40%; vertical-align:middle; min-width:120px">
-      <img src="{{item.image}}" style="width:auto; height:auto; max-width:100%;">
-      </td>
+            {% if item.description %}
+            <p class="pub-description">{{ item.description }}</p>
+            {% endif %}
 
-      <td style="padding:2.5%; width:75%; vertical-align:middle">
-          <b>{{item.title}}</b>
-          <br/>
-
-          {{item.authors}}
-          <br/>
-
-          {{item.conference}}
-          <br/>
-
-          {% if item.paper_link %} 
-          <a target="_blank" href="{{ item.paper_link }}">[Paper PDF]</a> &nbsp;
-          {% endif %} 
-
-          {% if item.supplemental_link %} 
-          <a target="_blank" href="{{ item.supplemental_link }}">[Supplemental PDF]</a> &nbsp;
-          {% endif %} 
-
-          {% if item.video_link %} 
-          <a target="_blank" href="{{ item.video_link }}">[Video]</a> &nbsp;
-          {% endif %}
-
-      </td>
-      </tr>        
-
-      {% endfor %}
-
-  </table>
+            <div class="pub-links">
+                {% if item.paper_link %}
+                <a href="{{ item.paper_link }}" target="_blank" class="pub-link">[Paper]</a>
+                {% endif %}
+                {% if item.code_link %}
+                <a href="{{ item.code_link }}" target="_blank" class="pub-link">[Code / Demo]</a>
+                {% endif %}
+                {% if item.supplemental_link %}
+                <a href="{{ item.supplemental_link }}" target="_blank" class="pub-link">[Supplemental]</a>
+                {% endif %}
+                {% if item.video_link %}
+                <a href="{{ item.video_link }}" target="_blank" class="pub-link">[Video]</a>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,10 +1,11 @@
-<div class="header">
-	<ul class="nav nav-pills pull-right">
-		<li class="{{ page.cv }}"><a href="/files/Karmanov.pdf" title="CV">CV</a></li>
-		<li class="{{ page.publications }}"><a href="/publications" title="Publications">Publications</a></li>
-		<li class="{{ page.projects }}"><a href="/projects/" title="Projects">Projects</a></li>
-		<li class="{{ page.personal }}"><a href="/personal/" title="Personal">Personal</a></li>
-
-	</ul>
-	<h3 class="text-muted"><a href="/">Ilia Karmanov</a></h3>
-</div> <!-- /header -->
+<header class="site-header">
+	<div class="header-inner">
+		<a href="/" class="site-name">Ilia Karmanov</a>
+		<nav class="site-nav">
+			<a href="/publications/" class="{{ page.publications }}">Publications</a>
+			<a href="/talks/" class="{{ page.talks }}">Talks</a>
+			<a href="/projects/" class="{{ page.projects }}">Projects</a>
+			<a href="/files/Karmanov.pdf" class="{{ page.cv }}">CV</a>
+		</nav>
+	</div>
+</header>

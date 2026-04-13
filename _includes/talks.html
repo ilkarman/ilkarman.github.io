@@ -1,0 +1,25 @@
+<div class="publications-list">
+    {% assign current_year = "" %}
+    {% for item in site.data.talks %}
+        {% if item.year != current_year %}
+            {% assign current_year = item.year %}
+            <h3 class="year-heading">{{ current_year }}</h3>
+        {% endif %}
+
+        <div class="pub-card">
+            {% if item.venue_badge %}
+            <span class="pub-badge">{{ item.venue_badge }}</span>
+            {% endif %}
+
+            <h4 class="pub-title">{{ item.title }}</h4>
+            <p class="pub-authors">{{ item.authors }}</p>
+            <p class="pub-venue">{{ item.venue }}</p>
+
+            {% if item.link %}
+            <div class="pub-links">
+                <a href="{{ item.link }}" target="_blank" class="pub-link">[Link]</a>
+            </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

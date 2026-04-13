@@ -1,4 +1,24 @@
+- title: "Eclair"
+  abstract: "First-authored document digitization model. Extracts formatted text (markdown/LaTeX), bounding boxes, and reading order from document images. Used in the Nemotron-H pre-training pipeline."
+  link: https://arxiv.org/abs/2502.04223
+  tags: "Document AI, Vision-Language Models, OCR"
+
+- title: "NVIDIA Nemotron Parse"
+  abstract: "Contributed to NVIDIA's production document parsing model. Open weights, optimized NIM container, deployed via NVIDIA's build platform."
+  link: https://build.nvidia.com/nvidia/nemotron-parse
+  tags: "Document Parsing, Production ML, Model Deployment"
+
+- title: "Eagle 2 (NVlabs)"
+  abstract: "Contributed to NVIDIA's vision-language model. Eagle2-9B matches 70B+ parameter models. Serves as the VLM backbone of the GR00T-N1 robotic foundation model."
+  link: https://github.com/NVlabs/Eagle
+  tags: "Vision-Language Models, Foundation Models"
+
+- title: "Lung Disease Prediction from Chest X-Rays"
+  abstract: "Co-authored work on lung disease prediction using DenseNet-121 on the NIH Chest X-ray dataset (112K images, 14 pathologies). Published on the Microsoft ML Blog."
+  link: https://learn.microsoft.com/en-us/archive/blogs/machinelearning/using-microsoft-ai-to-build-a-lung-disease-prediction-model-using-chest-x-ray-images
+  tags: "Medical Imaging, Computer Vision"
+
 - title: "Deep Learning Framework Comparisons"
-  abstract: Comparison of many deep-learning frameworks
+  abstract: "Benchmarking deep learning frameworks (TensorFlow, PyTorch, MXNet, CNTK, Keras, etc.) on common architectures. 1,700+ GitHub stars, contributions from framework creators."
   link: https://github.com/ilkarman/DeepLearningFrameworks
-  image: /img/projects/2018_dl_frameworks.png
+  tags: "Open Source, Deep Learning, Benchmarking"

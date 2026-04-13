@@ -1,22 +1,29 @@
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" width="device-width, initial-scale=1.0">
-	<meta name="description" content="{{ page.description }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{{ page.description | default: 'Ilia Karmanov - Researcher at NVIDIA working on document understanding and vision-language models.' }}">
 	<meta name="author" content="Ilia Karmanov">
-	<!-- favicon
-	<link rel="shortcut icon" href="/img/ico/favicon.png">
-	-->
-	<title>{{ page.title }} | Ilia Karmanov</title>		
-	<!-- styles -->
-	<link href="/css/bootstrap.css" rel="stylesheet">
-	<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+	<meta name="keywords" content="Ilia Karmanov, NVIDIA, machine learning, document understanding, vision-language models, research">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="{{ page.title | default: 'Ilia Karmanov' }}">
+	<meta property="og:description" content="{{ page.description | default: 'Researcher at NVIDIA working on document understanding and vision-language models.' }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ilkarman.github.io/">
+	<meta property="og:image" content="https://ilkarman.github.io/img/ilia-400px-square.jpg">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/jpeg" href="/img/ilia-200px-square.jpg">
+
+	<title>{{ page.title }} | Ilia Karmanov</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- Styles -->
 	<link href="/css/style.css" rel="stylesheet">
-	
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-  <script src="../../assets/js/html5shiv.js"></script>
-  <script src="../../assets/js/respond.min.js"></script>
-	<![endif]-->
-	<!-- google analytics - i will not share this data with google -->
-	{% include analytics.html %}	
+
+	{% include analytics.html %}
 </head>

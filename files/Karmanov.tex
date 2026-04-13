@@ -1,0 +1,185 @@
+%-------------------------
+% CV - Ilia Karmanov
+% Compile with: tectonic Karmanov.tex
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\cventry}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\cvpub}[1]{\item\small{#1}\vspace{-2pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlist[itemize]{leftmargin=0.15in}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{Ilia Karmanov}} \\[6pt]
+    \small
+    Zurich, Switzerland \quad $\cdot$ \quad
+    \href{mailto:ilia.uk@gmail.com}{ilia.uk@gmail.com} \quad $\cdot$ \quad
+    \href{https://ilkarman.github.io}{ilkarman.github.io} \quad $\cdot$ \quad
+    +447872517808
+\end{center}
+
+%----------OVERVIEW----------
+\section{Overview}
+\small{
+Research Scientist (Senior Staff) at NVIDIA ADLR, working on document understanding and vision-language models. First-authored Eclair, used in the Nemotron-H pre-training pipeline. Previously published at NeurIPS, ICCV, and BMVC at Qualcomm AI Research, with 12 patent applications. Promoted at every role. Economics background (BSc and MSc, LSE), self-taught in machine learning.
+}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+
+    \cventry
+      {NVIDIA ADLR, Zurich}{2022 -- present}
+      {Research Scientist, Staff $\rightarrow$ Senior Staff}{}
+      \begin{itemize}
+        \item First-authored Eclair: document digitization model that simultaneously extracts formatted text (markdown/LaTeX), bounding boxes with semantic classes, and reading order. Introduces the DROBS benchmark. Used in the Nemotron-H pre-training data pipeline for PDF-to-text extraction
+        \item Contributed to Eagle 2: vision-language model matching 70B+ parameter models using a mixture of vision encoders and three-stage training. Adopted as the VLM backbone of NVIDIA's GR00T-N1 robotic foundation model
+        \item Contributed to Nemotron Parse 1.1: lightweight document parsing model (885M params). Deployed with open weights, optimized NIM container, and available via NVIDIA's build platform
+        \item Contributed to Nemotron Nano V2 VL: hybrid Mamba-Transformer VLM for document understanding and long video comprehension. 128K token context with token reduction for higher throughput
+        \item Contributed to Nemotron-H: 8B and 56B hybrid Mamba-Transformer LLMs with up to 3x faster inference than comparable Transformers
+      \end{itemize}
+
+    \cventry
+      {Qualcomm AI Research, Amsterdam}{2020 -- 2022}
+      {Research Scientist $\rightarrow$ Staff Research Scientist}{}
+      \begin{itemize}
+        \item Created first unsupervised approach for 3D person-localisation on video and WiFi data, which changed the direction of our team's research track. Published at NeurIPS 2021 (with Max Welling) and IEEE GLOBECOM 2021 (first author)
+        \item Developed hardware-efficient architectures for 4K video-to-video processing (denoising on device)
+        \item Efficient Mixture-of-Experts architecture for conditional computation (BMVC 2022)
+        \item Video recognition via motion-augmented self-training (ICCV 2021, with Cees Snoek)
+        \item Hand-gesture classification for mmWave data (high-frequency radio), on-device and in real-time (IEEE WCNC 2021)
+        \item Filed 12 patent applications across positioning, gesture recognition, and efficient architectures
+      \end{itemize}
+
+    \cventry
+      {Microsoft, London}{2018 -- 2020}
+      {Senior Applied Scientist}{}
+      \begin{itemize}
+        \item Semantic segmentation: fully and self-supervised pretraining on various data modalities (X-rays, seismographs)
+        \item Object detection: supervised counting for industrial pipe inspection and store-shelf product identification
+        \item Video action recognition: real-time person action recognition and localisation
+        \item Synthetic data pipelines: improving generalisation through inductive biases (low-frequency/shape signals)
+      \end{itemize}
+
+    \cventry
+      {Microsoft, London}{2016 -- 2018}
+      {Applied Scientist}{}
+      \begin{itemize}
+        \item Collaborated with MSR on Z3 theorem-prover for plane-gate allocations (Dubai Airport)
+        \item Created \href{https://github.com/ilkarman/DeepLearningFrameworks}{DeepLearningFrameworks}: benchmarking deep learning frameworks across single-node and multi-node on Azure. 1,700+ GitHub stars, contributions from framework creators
+      \end{itemize}
+
+    \cventry
+      {Charles River Associates, London}{2014 -- 2016}
+      {Senior Associate}{}
+      \begin{itemize}
+        \item Econometric analysis of cross-sectional, time-series, and panel data for antitrust litigation
+        \item Network/graph theory for store-customer relationships; computational geometry for merger analysis
+      \end{itemize}
+
+    \cventry
+      {International Growth Centre (Oxford)}{2013 -- 2014}
+      {Research Economist}{}
+      \begin{itemize}
+        \item Research centre directed by Prof.\ Paul Collier. Contributed to research on firm capabilities, entrepreneurship, and trade
+      \end{itemize}
+
+    \cventry
+      {London School of Economics}{2013 -- 2014}
+      {Research Assistant to Prof.\ Frank Cowell}{}
+      \begin{itemize}
+        \item Simulations on measures of inequality (Matlab, Stata). Causal inference (diff-in-diff) on European identity and redistribution preferences, resulting in published paper (Costa-Font \& Cowell, 2015)
+      \end{itemize}
+
+  \end{itemize}
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \cvpub{\textbf{I Karmanov}, A Deshmukh, L Voegtle, P Fischer, K Chumachenko, T Roman, J Seppanen, J Parmar, J Jennings, A Tao, K Sapra. Eclair: Extracting Content and Layout with Integrated Reading Order for Documents. arXiv 2025}
+    \cvpub{K Chumachenko, A Deshmukh, J Seppanen, \textbf{I Karmanov}, C Chen, L Voegtle, P Fischer, et al. Nemotron Parse 1.1. arXiv 2025}
+    \cvpub{140+ authors incl.\ \textbf{I Karmanov}. NVIDIA Nemotron Nano V2 VL. arXiv 2025}
+    \cvpub{199 authors incl.\ \textbf{I Karmanov}. Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models. arXiv 2025}
+    \cvpub{Z Li, G Chen, S Liu, ... \textbf{I Karmanov}, L Voegtle, P Fischer, ... Z Yu. Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models. arXiv 2025}
+    \cvpub{A Royer, \textbf{I Karmanov}, A Skliar, B Ehteshami Bejnordi, T Blankevoort. Revisiting Single-gated Mixtures of Experts. BMVC 2022}
+    \cvpub{FG Zanjani, \textbf{I Karmanov}, H Ackermann, D Dijkman, S Merlin, M Welling, F Porikli. Modality-Agnostic Topology Aware Localization. NeurIPS 2021}
+    \cvpub{\textbf{I Karmanov}, FG Zanjani, S Merlin, I Kadampot, D Dijkman. WiCluster: Passive Indoor 2D/3D Positioning using WiFi without Precise Labels. IEEE GLOBECOM 2021}
+    \cvpub{K Gavrilyuk, M Jain, \textbf{I Karmanov}, CGM Snoek. Motion-Augmented Self-Training for Video Recognition at Smaller Scale. ICCV 2021}
+    \cvpub{Y Ren, J Lu, A Beletchi, Y Huang, \textbf{I Karmanov}, et al. Hand Gesture Recognition using 802.11ad mmWave. IEEE WCNC 2021}
+  \end{itemize}
+
+%-----------TALKS-----------
+\section{Select Talks}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \cvpub{\textbf{I Karmanov}, FG Zanjani, S Merlin, I Kadampot, D Dijkman. Demonstrating Accurate RF Sensing with Qualcomm Wi-Fi Technology. MWC 2021}
+    \cvpub{L Zhang, T Wu, X Xie, A Argyriou, \textbf{I Karmanov}, K Lian. Building Production-Ready Recommendation System at Scale. KDD 2019}
+    \cvpub{M Gonzalez-Fierro, D Dean, M Salvaris, \textbf{I Karmanov}. Microsoft AI Transformation. IROS 2018}
+    \cvpub{\textbf{I Karmanov}, M Salvaris, M Gonzalez-Fierro. Distributed Training of Deep Neural Networks. ODSC 2018 / Strata 2018}
+  \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \cventry
+      {London School of Economics}{2012 -- 2013}
+      {MSc Economics, with Merit}{}
+      \begin{itemize}
+        \item Thesis: Optimal Control Analysis for Tax Avoidance. Advisor: Prof.\ Frank Cowell
+      \end{itemize}
+    \cventry
+      {London School of Economics}{2009 -- 2012}
+      {BSc Economics, First Class Honours}{}
+      \begin{itemize}
+        \item Highest final-year average in cohort
+      \end{itemize}
+  \end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \begin{itemize}[leftmargin=0.15in]
+    \item\small{Youngest person to pass a Computer Science A-Level (BBC News, 2002)}
+    \item\small{Youngest person to pass an Economics A-Level (BBC News, 2005)}
+  \end{itemize}
+
+\end{document}

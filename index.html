@@ -3,34 +3,90 @@ layout: default
 title: Ilia Karmanov
 cv: passive
 publications: passive
-contact: passive
+projects: passive
+personal: passive
+talks: passive
+description: "Researcher at NVIDIA. Economist turned ML researcher. Document understanding, vision-language models. Previously at Qualcomm AI Research and Microsoft."
 ---
-<!-- <div class="jumbotron"> -->
-<div class="row marketing">
-	<div class="col-sm-4">
-		<img class="img-circle avatar" alt="Ilia Karmanov" src="img/ilia-200px-square.jpg">
+
+<div class="hero">
+	<div class="hero-photo">
+		<img class="avatar" alt="Ilia Karmanov" src="img/ilia-400px-square.jpg">
 	</div>
-	<div itemscope itemtype="http://data-vocabulary.org/Person" class="col-sm-8">
-			
-	<!--<p class="lead">Hi, I'm <span itemprop="name">Jonathan McGlone</span> and I make things on the web for academic libraries and scholarly publishers.</p>-->
-	<p>
-		I am a research scientist at <a href="https://www.qualcomm.com/research/artificial-intelligence/ai-research">Qualcomm AI Research</a>, living in Amsterdam. 
-		Previously, I was an applied scientist at Microsoft in <a href="https://www.microsoft.com/en-gb/about/offices/paddington/">London</a>.
-	</p>
-		
-	<p>
-		At Qualcomm, I have worked on 3D Computer Vision topics such as unsupervised positioning that is modality-agnostic and have applied it to WiFi positioning which has been featured at <a href="https://youtu.be/xNmnqCsvMTU">MWC 2021</a>, IEEE Globecom 2021, and <a href="https://youtu.be/8Qu-qVBhKZU">NeurIPS 2021</a>. I am currently working on creating efficient on-device video-denoising algorithms.
-	</p>
-	
-	<p>
-		My current research interests include self-supervised learning, positioning, and efficient video architecture design. 	
-	</p>
-	
+	<div class="hero-text" itemscope itemtype="http://schema.org/Person">
+		<h1 class="hero-name" itemprop="name">Ilia Karmanov</h1>
+		<p class="hero-title">Research Scientist at <a href="https://www.nvidia.com/en-us/research/">NVIDIA</a> &middot; Zurich</p>
+
+		<p>
+			I studied economics at <a href="https://www.lse.ac.uk/">LSE</a> (BSc and MSc),
+			taught myself machine learning, and have since worked at
+			<a href="https://www.microsoft.com/en-gb/about/offices/paddington/">Microsoft</a>,
+			<a href="https://www.qualcomm.com/research/artificial-intelligence/ai-research">Qualcomm AI Research</a>,
+			and NVIDIA.
+		</p>
+
+		<p>
+			At NVIDIA, I work on document understanding and vision-language models.
+			I first-authored <a href="https://arxiv.org/abs/2502.04223">Eclair</a>, a document digitization model used in the
+			<a href="https://arxiv.org/abs/2504.03624">Nemotron-H</a> pre-training pipeline, and have contributed to
+			<a href="https://arxiv.org/abs/2501.14818">Eagle 2</a>,
+			<a href="https://arxiv.org/abs/2511.03929">Nemotron Nano V2 VL</a>, and
+			<a href="https://build.nvidia.com/nvidia/nemotron-parse">Nemotron Parse</a> (deployed with open weights).
+		</p>
+
+		<p>
+			At Qualcomm AI Research (2020&ndash;2022), I worked on 3D computer vision and efficient architectures,
+			publishing at
+			<a href="https://proceedings.neurips.cc/paper/2021/hash/569ff987c643b4bedf504efda8f786c2-Abstract.html">NeurIPS</a> (with <a href="https://scholar.google.com/citations?user=8200InoAAAAJ">Max Welling</a>),
+			<a href="https://arxiv.org/abs/2105.01646">ICCV</a>, and
+			<a href="https://arxiv.org/abs/2304.05497">BMVC</a>, and filing 12 patent applications.
+			At Microsoft (2016&ndash;2020), I worked on applied ML and initiated an
+			<a href="https://github.com/ilkarman/DeepLearningFrameworks">open-source DL benchmarking project</a> (1,700+ stars).
+		</p>
+
+		<p>
+			Before ML, my MSc thesis used optimal control theory to model corporate behaviour under reputational incentives.
+			I then worked as a research economist at an
+			<a href="https://www.theigc.org/">Oxford research centre</a> (directed by
+			<a href="https://en.wikipedia.org/wiki/Paul_Collier">Prof. Paul Collier</a>),
+			and as a research assistant to
+			<a href="https://www.lse.ac.uk/economics/people/faculty/frank-cowell">Prof. Frank Cowell</a> at LSE
+			on causal inference work that led to a
+			<a href="https://scholar.google.com/scholar?q=European+Identity+Redistributive+Preferences+Costa-Font+Cowell">published paper</a>.
+		</p>
+
+		<p class="research-interests">
+			<strong>Research interests:</strong> multimodal reasoning, document understanding, efficient architectures, scalable training.
+		</p>
 	</div>
-
-	{% include news.html %}
-
-	{% include social.html %}
-
 </div>
-<!-- </div> -->
+
+<div class="section" id="highlights">
+	<h2>Selected Research</h2>
+	<div class="highlight-cards">
+		<a href="https://arxiv.org/abs/2502.04223" class="highlight-card featured" target="_blank">
+			<span class="highlight-badge">First Author</span>
+			<h3>Eclair</h3>
+			<p>Document digitization &mdash; extracts formatted text, layout, and reading order. Used in Nemotron-H pre-training pipeline.</p>
+			<span class="highlight-venue">arXiv 2025</span>
+		</a>
+		<a href="https://arxiv.org/abs/2107.01002" class="highlight-card featured" target="_blank">
+			<span class="highlight-badge">First Author</span>
+			<h3>WiCluster</h3>
+			<p>First weakly-supervised passive indoor positioning using WiFi CSI without precise location labels.</p>
+			<span class="highlight-venue">IEEE GLOBECOM 2021</span>
+		</a>
+		<a href="https://arxiv.org/abs/2304.05497" class="highlight-card" target="_blank">
+			<span class="highlight-badge">BMVC</span>
+			<h3>Single-gated MoE</h3>
+			<p>Revisiting simple MoE architectures with base model branch for early-exit and regularization.</p>
+			<span class="highlight-venue">BMVC 2022</span>
+		</a>
+	</div>
+</div>
+
+{% include news.html %}
+
+<div class="section" id="social">
+	{% include social.html %}
+</div>

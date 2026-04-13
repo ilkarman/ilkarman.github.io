@@ -1,2 +1,9 @@
 _site/
 .DS_Store
+vendor/
+.bundle/
+_fonts/
+_build.py
+_generate_cv.py
+*.woff2
+inter.zip

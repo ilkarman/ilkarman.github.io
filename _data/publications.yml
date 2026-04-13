@@ -1,26 +1,104 @@
+# NVIDIA (2022-present)
+- title: "Nemotron Parse 1.1"
+  authors: K Chumachenko, A Deshmukh, J Seppanen, <strong>I Karmanov</strong>, C Chen, L Voegtle, P Fischer, et al.
+  conference: arXiv 2025
+  year: 2025
+  venue_badge: NVIDIA
+  paper_link: https://arxiv.org/abs/2511.20478
+  code_link: https://build.nvidia.com/nvidia/nemotron-parse
+  description: "Lightweight document parsing and OCR model (885M params). Covers general OCR, markdown formatting, structured table parsing, and text extraction. Released as open weights with optimized NIM container."
+
+- title: "NVIDIA Nemotron Nano V2 VL"
+  authors: 140+ authors including <strong>I Karmanov</strong>
+  conference: arXiv 2025
+  year: 2025
+  venue_badge: NVIDIA
+  paper_link: https://arxiv.org/abs/2511.03929
+  description: "Vision-language model on hybrid Mamba-Transformer architecture for document understanding, long video comprehension, and reasoning. 128K token context with token reduction for higher throughput."
+
+- title: "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models"
+  authors: 199 authors including <strong>I Karmanov</strong>
+  conference: arXiv 2025
+  year: 2025
+  venue_badge: NVIDIA
+  paper_link: https://arxiv.org/abs/2504.03624
+  description: "8B and 56B hybrid Mamba-Transformer models with up to 3x faster inference than comparable Transformers (Qwen-2.5, Llama-3.1) with equal or better accuracy. Eclair was used for PDF-to-text extraction in the pre-training data pipeline."
+
+- title: "Eclair: Extracting Content and Layout with Integrated Reading Order for Documents"
+  authors: <strong>I Karmanov (first author)</strong>, A Deshmukh, L Voegtle, P Fischer, K Chumachenko, T Roman, J Seppanen, J Parmar, J Jennings, A Tao, K Sapra
+  conference: arXiv 2025
+  year: 2025
+  venue_badge: First Author
+  paper_link: https://arxiv.org/abs/2502.04223
+  highlight: true
+  description: "General-purpose document digitization model that simultaneously extracts formatted text (markdown/LaTeX), bounding boxes with semantic classes, and reading order. Introduces the DROBS benchmark."
+
+- title: "Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models"
+  authors: Z Li, G Chen, S Liu, ... <strong>I Karmanov</strong>, L Voegtle, P Fischer, ... Z Yu (27 authors)
+  conference: arXiv 2025
+  year: 2025
+  venue_badge: NVIDIA
+  paper_link: https://arxiv.org/abs/2501.14818
+  code_link: https://github.com/NVlabs/Eagle
+  description: "Data-centric approach to VLM post-training. Eagle2-9B matches models with up to 70B parameters. Later adopted as the VLM backbone of NVIDIA's GR00T-N1 robotic foundation model."
+
+# Qualcomm AI Research (2020-2022)
+- title: "Revisiting Single-gated Mixtures of Experts"
+  authors: A Royer, <strong>I Karmanov</strong>, A Skliar, B Ehteshami Bejnordi, T Blankevoort
+  conference: BMVC 2022
+  year: 2022
+  venue_badge: BMVC
+  paper_link: https://arxiv.org/abs/2304.05497
+  description: "Revisits simple single-gate MoE architectures with base model branch for early-exit and regularization. Achieves efficiency-accuracy trade-offs comparable to more complex MoE approaches."
+
 - title: "Modality-Agnostic Topology Aware Localization"
-  authors: FG Zanjani, I Karmanov, H Ackermann, D Dijkman, S Merlin, M Welling, F Porikli
+  authors: FG Zanjani, <strong>I Karmanov</strong>, H Ackermann, D Dijkman, S Merlin, M Welling, F Porikli
   conference: NeurIPS 2021
+  year: 2021
+  venue_badge: NeurIPS
   paper_link: https://proceedings.neurips.cc/paper/2021/file/569ff987c643b4bedf504efda8f786c2-Paper.pdf
   supplemental_link: https://proceedings.neurips.cc/paper/2021/file/569ff987c643b4bedf504efda8f786c2-Supplemental.pdf
   video_link: https://www.youtube.com/watch?v=8Qu-qVBhKZU
-  image: /img/projects/2021_ot_isomap.png
+  description: "Unsupervised positioning using optimal transport on isometric embeddings, agnostic to input modality. Applied to WiFi and visual positioning."
+
+- title: "Deep Learning Frameworks for Weakly-Supervised Indoor Localization"
+  authors: FG Zanjani, H Ackermann, D Dijkman, <strong>I Karmanov</strong>, et al.
+  conference: NeurIPS 2021 (Competition & Demos)
+  year: 2021
+  venue_badge: NeurIPS
+  description: "Deep learning frameworks for weakly-supervised indoor positioning using WiFi and visual data."
 
 - title: "WiCluster: Passive Indoor 2D/3D Positioning using WiFi without Precise Labels"
-  authors: I Karmanov, F Zanjani, S Merlin, I Kadampot, D Dijkman
+  authors: <strong>I Karmanov (first author)</strong>, F Zanjani, S Merlin, I Kadampot, D Dijkman
   conference: IEEE GLOBECOM 2021
-  paper_link: https://arxiv.org/pdf/2107.01002.pdf
+  year: 2021
+  venue_badge: First Author
+  highlight: true
+  paper_link: https://arxiv.org/abs/2107.01002
   video_link: https://www.youtube.com/watch?v=8Qu-qVBhKZU
-  image: /img/projects/2021_wicluster.png
+  description: "First weakly-supervised passive indoor positioning using WiFi CSI without precise location labels. Featured by Qualcomm as an AI First and covered by Forbes."
 
 - title: "Motion-Augmented Self-Training for Video Recognition at Smaller Scale"
-  authors: K Gavrilyuk, M Jain, I Karmanov, C Snoek
+  authors: K Gavrilyuk, M Jain, <strong>I Karmanov</strong>, C Snoek
   conference: ICCV 2021
-  paper_link: https://arxiv.org/pdf/2105.01646.pdf
-  image: /img/projects/2021_motionfit.png
+  year: 2021
+  venue_badge: ICCV
+  paper_link: https://arxiv.org/abs/2105.01646
+  description: "Self-training approach for video recognition that leverages motion information to improve performance with limited labeled data."
 
-- title: "Hand gesture recognition using 802.11ad mmWave sensor in the mobile device"
-  authors: Y Ren, J Lu, A Beletchi, Y Huang, I Karmanov, D Dijkman
+- title: "Hand Gesture Recognition using 802.11ad mmWave Sensor in the Mobile Device"
+  authors: Y Ren, J Lu, A Beletchi, Y Huang, <strong>I Karmanov</strong>, D Dijkman
   conference: IEEE WCNC 2021
+  year: 2021
+  venue_badge: WCNC
   paper_link: https://ieeexplore.ieee.org/abstract/document/9419978
-  image: /img/projects/2021_handgesture.png
+  description: "Hand gesture recognition using mmWave radar sensing on mobile devices."
+
+# Economics
+- title: "European Identity and Redistributive Preferences"
+  authors: J Costa-Font, F Cowell (with research contributions from <strong>I Karmanov</strong>)
+  conference: CESifo Working Paper / LSE
+  year: 2015
+  venue_badge: Economics
+  paper_link: https://scholar.google.com/scholar?q=European+Identity+Redistributive+Preferences+Costa-Font+Cowell
+  description: "Empirical causal inference (diff-in-diff) examining how changes in European identity affect preferences for redistribution. Contributed data generation, simulations, and econometric analysis."

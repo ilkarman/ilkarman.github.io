@@ -1,3 +1,6 @@
+title: Ilia Karmanov
+description: "Researcher at NVIDIA working on document understanding and vision-language models."
+url: "https://ilkarman.github.io"
 permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
 images_personal_url: "/img/personal/"

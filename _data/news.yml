@@ -1,14 +1,29 @@
+- date: 11/2025
+  content: <a href="https://arxiv.org/abs/2511.20478">Nemotron Parse 1.1</a> released &mdash; lightweight document parsing model with open weights and optimized NIM container.
+
+- date: 11/2025
+  content: Contributed to <a href="https://arxiv.org/abs/2511.03929">Nemotron Nano V2 VL</a>, a vision-language model for document understanding and long video comprehension.
+
+- date: 07/2025
+  content: Contributed to <a href="https://developer.nvidia.com/blog/turn-complex-documents-into-usable-data-with-vlm-nvidia-nemotron-parse-1-1/">NVIDIA Developer Blog</a> on turning complex documents into usable data with Nemotron Parse 1.1.
+
+- date: 04/2025
+  content: Contributed to <a href="https://arxiv.org/abs/2504.03624">Nemotron-H</a> &mdash; hybrid Mamba-Transformer models with up to 3x faster inference. Eclair was used for pre-training data preparation.
+
+- date: 02/2025
+  content: Released <a href="https://arxiv.org/abs/2502.04223">Eclair</a> (first-author) &mdash; document digitization model for extracting content, layout, and reading order.
+
+- date: 01/2025
+  content: Contributed to <a href="https://arxiv.org/abs/2501.14818">Eagle 2</a>. Eagle2-9B matches 70B+ models and powers the GR00T-N1 robotic foundation model.
+
+- date: 06/2022
+  content: Joined <a href="https://www.nvidia.com/en-us/research/">NVIDIA Research</a> in Zurich, working on document understanding and vision-language models.
+
+- date: 06/2022
+  content: <a href="https://arxiv.org/abs/2304.05497">Revisiting Single-gated Mixtures of Experts</a> accepted to BMVC 2022.
+
 - date: 05/2022
-  content: <a href="https://arxiv.org/abs/2107.01002">WiCluster</a> was featured by Qualcomm as part of the <a href="https://www.qualcomm.com/news/onq/2022/05/bringing-ai-research-to-wireless-communication-and-sensing">AI research</a> that is crossing over to wireless communication
+  content: <a href="https://arxiv.org/abs/2107.01002">WiCluster</a> featured by Qualcomm as part of <a href="https://www.qualcomm.com/news/onq/2022/05/bringing-ai-research-to-wireless-communication-and-sensing">AI research crossing over to wireless communication</a>.
+
 - date: 03/2022
-  content: Our Qualcomm AI First regarding 3D Positioning is featured on <a href="https://www.forbes.com/sites/karlfreund/2022/04/08/qualcomm-touts-eight-ai-firsts/">Forbes</a>.
-- date: 03/2022
-  content: Our work on 3D positioning has been featured as part of the <a href="https://www.qualcomm.com/news/onq/2022/03/15/leading-research-delivers-ai-firsts">AI Firsts</a> list by Qualcomm. Check out the accompanying <a href="https://www.youtube.com/watch?v=8Qu-qVBhKZU">Video</a>.
-- date: 09/2021
-  content: Our paper <a href="https://proceedings.neurips.cc/paper/2021/hash/569ff987c643b4bedf504efda8f786c2-Abstract.html">OT Isomap</a> has been accepted to NeurIPS 2021
-- date: 08/2021
-  content: Our paper <a href="https://arxiv.org/abs/2107.01002">WiCluster</a> has been accepted to IEEE Globecom 2021
-- date: 07/2021
-  content: Our paper <a href="https://arxiv.org/abs/2105.01646">MotionFit</a> has been accepted to ICCV 2021
-- date: 06/2021
-  content: Our work on RF Sensing has been featured as a <a href="https://youtu.be/xNmnqCsvMTU">YouTube Demo</a> at MWC 2021
+  content: 3D positioning work featured as a <a href="https://www.qualcomm.com/news/onq/2022/03/15/leading-research-delivers-ai-firsts">Qualcomm AI First</a> and covered by <a href="https://www.forbes.com/sites/karlfreund/2022/04/08/qualcomm-touts-eight-ai-firsts/">Forbes</a>.

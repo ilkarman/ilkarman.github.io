@@ -1,32 +1,22 @@
-<div class="item">
-
-  <h3 class="text-muted">Projects</h3>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-      {% for item in site.data.projects %}
-      <tr>
-      <td style="padding:2.5%; width:40%; vertical-align:middle; min-width:120px">
-      <img src="{{item.image}}" style="width:auto; height:auto; max-width:100%;">
-      </td>
-
-      <td style="padding:2.5%; width:75%; vertical-align:middle">
-          <b>{{item.title}}</b>
-          <br/>
-
-          {{item.abstract}}
-          <br/>
-
-          {{item.conference}}
-          <br/>
-
-          {% if item.link %} 
-          <a target="_blank" href="{{ item.link }}">[Project Link]</a> &nbsp;
-          {% endif %} 
-
-      </td>
-      </tr>        
-
-      {% endfor %}
-
-  </table>
+<div class="projects-list">
+    {% for item in site.data.projects %}
+    <div class="project-card">
+        <h4 class="project-title">
+            {% if item.link %}
+            <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+            {% else %}
+            {{ item.title }}
+            {% endif %}
+        </h4>
+        <p class="project-description">{{ item.abstract }}</p>
+        {% if item.tags %}
+        <div class="project-tags">
+            {% assign tag_list = item.tags | split: ", " %}
+            {% for tag in tag_list %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>

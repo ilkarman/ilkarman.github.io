@@ -1,0 +1,37 @@
+- title: "Demonstrating Accurate RF Sensing with Qualcomm Wi-Fi Technology"
+  authors: <strong>I Karmanov</strong>, FG Zanjani, S Merlin, I Kadampot, D Dijkman
+  venue: Mobile World Congress (MWC)
+  year: 2021
+  venue_badge: MWC
+  link: https://youtu.be/xNmnqCsvMTU
+
+- title: "Building Production-Ready Recommendation System at Scale"
+  authors: L Zhang, T Wu, X Xie, A Argyriou, <strong>I Karmanov</strong>, K Lian
+  venue: ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)
+  year: 2019
+  venue_badge: KDD
+
+- title: "Distributed Training of Deep Learning Models"
+  authors: <strong>I Karmanov</strong>, M Salvaris, M Gonzalez-Fierro
+  venue: O'Reilly Strata Data Conference, London
+  year: 2018
+  venue_badge: Strata
+  link: https://conferences.oreilly.com/strata/strata-eu-2018/public/schedule/speaker/298436.html
+
+- title: "Distributed Training on Multi-Node Multi-GPU of Deep Neural Networks"
+  authors: <strong>I Karmanov</strong>, M Salvaris, M Gonzalez-Fierro
+  venue: Open Data Science Conference (ODSC)
+  year: 2018
+  venue_badge: ODSC
+
+- title: "Microsoft AI Transformation"
+  authors: M Gonzalez-Fierro, D Dean, M Salvaris, <strong>I Karmanov</strong>
+  venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2018
+  venue_badge: IROS
+
+- title: "Linear Programming on Azure for Plane-Gate Optimisation"
+  authors: <strong>I Karmanov</strong>, F Boylu-Uz
+  venue: Machine Learning and Data Science Conference (MLADS)
+  year: 2018
+  venue_badge: MLADS
