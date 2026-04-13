@@ -58,7 +58,6 @@
   venue_badge: NeurIPS
   paper_link: https://proceedings.neurips.cc/paper/2021/file/569ff987c643b4bedf504efda8f786c2-Paper.pdf
   supplemental_link: https://proceedings.neurips.cc/paper/2021/file/569ff987c643b4bedf504efda8f786c2-Supplemental.pdf
-  video_link: https://www.youtube.com/watch?v=8Qu-qVBhKZU
   description: "Unsupervised positioning using optimal transport on isometric embeddings, agnostic to input modality. Applied to WiFi and visual positioning."
 
 - title: "Deep Learning Frameworks for Weakly-Supervised Indoor Localization"
