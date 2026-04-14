@@ -35,9 +35,9 @@
 
 - title: "Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models"
   authors: Z Li, G Chen, S Liu, ... <strong>I Karmanov</strong>, L Voegtle, P Fischer, ... Z Yu (27 authors)
-  conference: arXiv 2025
+  conference: NeurIPS 2025
   year: 2025
-  venue_badge: NVIDIA
+  venue_badge: NeurIPS
   paper_link: https://arxiv.org/abs/2501.14818
   code_link: https://github.com/NVlabs/Eagle
   description: "Data-centric approach to VLM post-training. Eagle2-9B matches models with up to 70B parameters. Later adopted as the VLM backbone of NVIDIA's GR00T-N1 robotic foundation model."

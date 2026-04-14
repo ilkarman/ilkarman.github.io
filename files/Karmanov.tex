@@ -62,7 +62,7 @@
 %----------OVERVIEW----------
 \section{Overview}
 \small{
-Research Scientist (Senior Staff) at NVIDIA ADLR, working on document understanding and vision-language models. First-authored Eclair, used in the Nemotron-H pre-training pipeline. Previously published at NeurIPS, ICCV, and BMVC at Qualcomm AI Research, with 12 patent applications. Promoted at every role. Economics background (BSc and MSc, LSE), self-taught in machine learning.
+Research Scientist (Senior Staff) at NVIDIA ADLR, working on vision-language models and reinforcement learning for multimodal reasoning. First-authored Eclair, used in the Nemotron-H pre-training pipeline. Previously published at NeurIPS, ICCV, and BMVC at Qualcomm AI Research, with 12 patent applications. Economics background (BSc and MSc, LSE), self-taught in machine learning.
 }
 
 %-----------EXPERIENCE-----------
@@ -70,15 +70,20 @@ Research Scientist (Senior Staff) at NVIDIA ADLR, working on document understand
   \begin{itemize}[leftmargin=0.15in, label={}]
 
     \cventry
-      {NVIDIA ADLR, Zurich}{2022 -- present}
-      {Staff Research Scientist $\rightarrow$ Senior Staff Research Scientist}{}
+      {NVIDIA ADLR, Zurich}{Mar 2025 -- present}
+      {Senior Staff Research Scientist}{}
       \begin{itemize}
-        \item First-authored Eclair: document digitization model that simultaneously extracts formatted text (markdown/LaTeX), bounding boxes with semantic classes, and reading order. Introduces the DROBS benchmark. Used in the Nemotron-H pre-training data pipeline for PDF-to-text extraction
-        \item Eagle 2: vision-language model matching 70B+ parameter models using a mixture of vision encoders and three-stage training. Adopted as the VLM backbone of NVIDIA's GR00T-N1 robotic foundation model
-        \item Nemotron Parse 1.1: lightweight document parsing model (885M params). Deployed with open weights, optimized NIM container, and available via NVIDIA's build platform
-        \item Nemotron Nano V2 VL: hybrid Mamba-Transformer VLM for document understanding and long video comprehension. 128K token context with token reduction for higher throughput
-        \item Nemotron-H: 8B and 56B hybrid Mamba-Transformer LLMs with up to 3x faster inference than comparable Transformers
-        %\item Multi-modality fusion (LiDAR + Camera) for autonomous driving
+        \item Introduced reinforcement learning to NVIDIA's vision-language models. Built the first GRPO training pipeline on hybrid Mamba-Transformer architectures for visual reasoning. Through systematic rollout analysis, identified that visual perception---not reasoning---was the primary bottleneck, which informed the team's approach to multimodal reasoning (MathVista, MMMU-Pro, MMLongBench)
+        \item Currently working on multi-hop visual reasoning and Nemotron VL V3
+      \end{itemize}
+
+    \cventry
+      {NVIDIA ADLR, Zurich}{Sep 2022 -- Feb 2025}
+      {Staff Research Scientist}{}
+      \begin{itemize}
+        \item Created Eclair, a document understanding model designed to serve two purposes: as architecture R\&D for vision-language encoders and as a high-fidelity extraction system (LaTeX, code, equations) for LLM pre-training data. Led architecture design, training strategy, and the paper. The model shipped as Nemotron Parse and provided 50B+ text tokens to NVIDIA's LLM pre-training pipeline
+        \item Identified and solved a data-conditioning failure where the model learned to rely on visual appearance rather than text prompts across heterogeneous data sources. Developed a self-correcting labelling method---masking incorrect predictions and re-feeding as valid samples---now patented
+        \item Contributed architecture guidance for Eagle 2 (NeurIPS 2025) on token compression for dense OCR tasks. Mentored two interns who converted to full-time; one now leads Nemotron Parse
       \end{itemize}
 
     \cventry
@@ -93,7 +98,7 @@ Research Scientist (Senior Staff) at NVIDIA ADLR, working on document understand
       {Qualcomm AI Research, Amsterdam}{2020 -- 2021}
       {Senior Research Scientist}{}
       \begin{itemize}
-        \item Created first unsupervised approach for 3D person-localisation on video and WiFi data, which changed the direction of our team's research track. Published at NeurIPS 2021 (with Max Welling) and IEEE GLOBECOM 2021 (first author)
+        \item Created first unsupervised approach for 3D person-localisation on video and WiFi data. Published at NeurIPS 2021 (with Max Welling) and IEEE GLOBECOM 2021 (first author)
         \item Video recognition via motion-augmented self-training (ICCV 2021, with Cees Snoek)
         \item Hand-gesture classification for mmWave data (high-frequency radio), on-device and in real-time (IEEE WCNC 2021)
         \item Filed 12 patent applications across positioning, gesture recognition, and efficient architectures
@@ -148,7 +153,7 @@ Research Scientist (Senior Staff) at NVIDIA ADLR, working on document understand
     \cvpub{K Chumachenko, A Deshmukh, J Seppanen, \textbf{I Karmanov}, C Chen, L Voegtle, P Fischer, et al. Nemotron Parse 1.1. arXiv 2025}
     \cvpub{140+ authors incl.\ \textbf{I Karmanov}. NVIDIA Nemotron Nano V2 VL. arXiv 2025}
     \cvpub{199 authors incl.\ \textbf{I Karmanov}. Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models. arXiv 2025}
-    \cvpub{Z Li, G Chen, S Liu, ... \textbf{I Karmanov}, L Voegtle, P Fischer, ... Z Yu. Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models. arXiv 2025}
+    \cvpub{Z Li, G Chen, S Liu, ... \textbf{I Karmanov}, L Voegtle, P Fischer, ... Z Yu. Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models. NeurIPS 2025}
     \cvpub{A Royer, \textbf{I Karmanov}, A Skliar, B Ehteshami Bejnordi, T Blankevoort. Revisiting Single-gated Mixtures of Experts. BMVC 2022}
     \cvpub{FG Zanjani, \textbf{I Karmanov}, H Ackermann, D Dijkman, S Merlin, M Welling, F Porikli. Modality-Agnostic Topology Aware Localization. NeurIPS 2021}
     \cvpub{\textbf{I Karmanov}, FG Zanjani, S Merlin, I Kadampot, D Dijkman. WiCluster: Passive Indoor 2D/3D Positioning using WiFi without Precise Labels. IEEE GLOBECOM 2021}
