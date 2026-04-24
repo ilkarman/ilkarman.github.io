@@ -62,7 +62,7 @@
 %----------OVERVIEW----------
 \section{Overview}
 \small{
-Research Scientist (Senior Staff) at NVIDIA ADLR, working on vision-language models and reinforcement learning for multimodal reasoning. First-authored Eclair, used in the Nemotron-H pre-training pipeline. Previously published at NeurIPS, ICCV, and BMVC at Qualcomm AI Research, with 12 patent applications. Trained in economics at LSE (BSc, First Class; MSc) with a focus on optimal control and causal inference; transitioned into machine learning in 2016.
+Research Scientist (Senior Staff) at NVIDIA ADLR, working on vision-language models and reinforcement learning for multimodal reasoning. First-authored Eclair, now used across NVIDIA's multimodal stack as pre-training data extractor, VLM distillation teacher, pseudo-labeler, and grounding for synthetic VQA generation. Previously published at NeurIPS, ICCV, and BMVC at Qualcomm AI Research, with 12 patent applications. Trained in economics at LSE (BSc, First Class; MSc) with a focus on optimal control and causal inference; transitioned into machine learning in 2016.
 }
 
 %-----------EXPERIENCE-----------
@@ -81,7 +81,7 @@ Research Scientist (Senior Staff) at NVIDIA ADLR, working on vision-language mod
       {NVIDIA ADLR, Zurich}{Sep 2022 -- Feb 2025}
       {Staff Research Scientist}{}
       \begin{itemize}
-        \item Created Eclair, a document understanding model designed to serve two purposes: as architecture R\&D for vision-language encoders and as a high-fidelity extraction system (LaTeX, code, equations) for LLM pre-training data. Led architecture design, training strategy, and the paper. The model shipped as Nemotron Parse and provided 50B+ text tokens to NVIDIA's LLM pre-training pipeline
+        \item Created Eclair, a multimodal encoder-decoder now used across NVIDIA's training pipelines: (a) high-fidelity text extractor contributing 50B+ tokens to LLM pre-training, (b) teacher model for distilling OCR capability into general VLMs, (c) pseudo-labeling pipeline for VLM training data, (d) text extractor grounding synthetic VQA generation. Originated the architectural choices: no positional encoding in the decoder, and a chained multi-token prediction formulation that replicates DeepSeek V3's single-token accuracy lift on a multimodal task. Shipped as Nemotron Parse
         \item Identified and solved a data-conditioning failure where the model learned to rely on visual appearance rather than text prompts across heterogeneous data sources. Developed a self-correcting labelling method---masking incorrect predictions and re-feeding as valid samples---now patented
         \item Contributed architecture guidance for Eagle 2 (NeurIPS 2025) on token compression for dense OCR tasks. Mentored two interns who converted to full-time; one now leads Nemotron Parse
       \end{itemize}

@@ -6,7 +6,7 @@
   venue_badge: NVIDIA
   paper_link: https://arxiv.org/abs/2511.20478
   code_link: https://build.nvidia.com/nvidia/nemotron-parse
-  description: "Lightweight document parsing and OCR model (885M params). Covers general OCR, markdown formatting, structured table parsing, and text extraction. Released as open weights with optimized NIM container."
+  description: "Follow-up to Eclair. 885M parameter lightweight model adding a token-compressed variant (20% speed gain), improved reading order for floating elements, and longer output sequences. Released as open weights with optimized NIM container."
 
 - title: "NVIDIA Nemotron Nano V2 VL"
   authors: 140+ authors including <strong>I Karmanov</strong>
@@ -31,7 +31,7 @@
   venue_badge: First Author
   paper_link: https://arxiv.org/abs/2502.04223
   highlight: true
-  description: "General-purpose document digitization model that simultaneously extracts formatted text (markdown/LaTeX), bounding boxes with semantic classes, and reading order. Introduces the DROBS benchmark."
+  description: "Multimodal encoder-decoder for document understanding. Extracts formatted text (markdown/LaTeX), bounding boxes with semantic classes, and reading order. Originated architectural choices: no positional encoding in the decoder, chained multi-token prediction. Used across NVIDIA's training pipelines for LLM pre-training data, VLM distillation, pseudo-labeling, and synthetic VQA grounding. Introduces the DROBS benchmark."
 
 - title: "Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models"
   authors: Z Li, G Chen, S Liu, ... <strong>I Karmanov</strong>, L Voegtle, P Fischer, ... Z Yu (27 authors)

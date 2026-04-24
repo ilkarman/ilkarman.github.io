@@ -1,10 +1,10 @@
 - title: "Eclair"
-  abstract: "First-authored document digitization model. Extracts formatted text (markdown/LaTeX), bounding boxes, and reading order from document images. Used in the Nemotron-H pre-training pipeline."
+  abstract: "First-authored multimodal encoder-decoder for document understanding. Originated the architectural choices (no positional encoding in the decoder, chained multi-token prediction). Used across NVIDIA's training pipelines: 50B+ tokens to LLM pre-training, teacher for VLM OCR distillation, pseudo-labeler for VLM training data, and text extractor grounding synthetic VQA generation."
   link: https://arxiv.org/abs/2502.04223
-  tags: "Document AI, Vision-Language Models, OCR"
+  tags: "Document AI, Vision-Language Models, Multimodal Pre-training"
 
 - title: "NVIDIA Nemotron Parse"
-  abstract: "Contributed to NVIDIA's production document parsing model. Open weights, optimized NIM container, deployed via NVIDIA's build platform."
+  abstract: "Senior author on the Nemotron Parse 1.1 follow-up to Eclair. Open weights, optimized NIM container, deployed via NVIDIA's build platform. v1.1 adds a token-compressed variant with 20% speed gain, improved reading order, and longer output sequences."
   link: https://build.nvidia.com/nvidia/nemotron-parse
   tags: "Document Parsing, Production ML, Model Deployment"
 
