@@ -1,4 +1,12 @@
 # NVIDIA (2022-present)
+- title: "NVIDIA Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence"
+  authors: Large NVIDIA collaboration including <strong>I Karmanov</strong>
+  conference: arXiv 2026
+  year: 2026
+  venue_badge: NVIDIA
+  paper_link: https://arxiv.org/abs/2604.24954
+  description: "Open multimodal model spanning text, image, video, and audio, with strong long-context document understanding (MMLongBench-Doc, OCRBench-V2)."
+
 - title: "Nemotron Parse 1.1"
   authors: K Chumachenko, A Deshmukh, J Seppanen, <strong>I Karmanov</strong>, C Chen, L Voegtle, P Fischer, et al.
   conference: arXiv 2025
@@ -6,7 +14,7 @@
   venue_badge: NVIDIA
   paper_link: https://arxiv.org/abs/2511.20478
   code_link: https://build.nvidia.com/nvidia/nemotron-parse
-  description: "Lightweight document parsing and OCR model (885M params). Covers general OCR, markdown formatting, structured table parsing, and text extraction. Released as open weights with optimized NIM container."
+  description: "Follow-up to Eclair. 885M parameter lightweight model adding a token-compressed variant (20% speed gain), improved reading order for floating elements, and longer output sequences. Released as open weights with optimized NIM container."
 
 - title: "NVIDIA Nemotron Nano V2 VL"
   authors: 140+ authors including <strong>I Karmanov</strong>
@@ -31,13 +39,13 @@
   venue_badge: First Author
   paper_link: https://arxiv.org/abs/2502.04223
   highlight: true
-  description: "General-purpose document digitization model that simultaneously extracts formatted text (markdown/LaTeX), bounding boxes with semantic classes, and reading order. Introduces the DROBS benchmark."
+  description: "Multimodal encoder-decoder for document understanding. Extracts formatted text (markdown/LaTeX), bounding boxes with semantic classes, and reading order. Asymmetric design (larger vision encoder, lightweight decoder), no positional embeddings in the decoder, multi-token prediction, and a single prompt-controlled output format. Adopted across NVIDIA's pipelines for pre-training data and VLM distillation. Introduces the DROBS benchmark."
 
 - title: "Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models"
   authors: Z Li, G Chen, S Liu, ... <strong>I Karmanov</strong>, L Voegtle, P Fischer, ... Z Yu (27 authors)
-  conference: arXiv 2025
+  conference: NeurIPS 2025
   year: 2025
-  venue_badge: NVIDIA
+  venue_badge: NeurIPS
   paper_link: https://arxiv.org/abs/2501.14818
   code_link: https://github.com/NVlabs/Eagle
   description: "Data-centric approach to VLM post-training. Eagle2-9B matches models with up to 70B parameters. Later adopted as the VLM backbone of NVIDIA's GR00T-N1 robotic foundation model."
@@ -75,7 +83,7 @@
   highlight: true
   paper_link: https://arxiv.org/abs/2107.01002
   video_link: https://www.youtube.com/watch?v=8Qu-qVBhKZU
-  description: "First weakly-supervised passive indoor positioning using WiFi CSI without precise location labels. Featured by Qualcomm as an AI First and covered by Forbes."
+  description: "First weakly-supervised passive indoor positioning using WiFi CSI without precise location labels."
 
 - title: "Motion-Augmented Self-Training for Video Recognition at Smaller Scale"
   authors: K Gavrilyuk, M Jain, <strong>I Karmanov</strong>, C Snoek

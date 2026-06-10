@@ -1,12 +1,17 @@
 - title: "Eclair"
-  abstract: "First-authored document digitization model. Extracts formatted text (markdown/LaTeX), bounding boxes, and reading order from document images. Used in the Nemotron-H pre-training pipeline."
+  abstract: "First author of Eclair, a document-understanding model that extracts formatted text, tables, formulas, and reading order. Asymmetric design (larger vision encoder, lightweight decoder), no positional embeddings in the decoder, multi-token prediction, and a single prompt-controlled output format. Adopted across NVIDIA's pipelines for pre-training data (50B+ tokens) and VLM distillation; shipped as Nemotron Parse."
   link: https://arxiv.org/abs/2502.04223
-  tags: "Document AI, Vision-Language Models, OCR"
+  tags: "Document AI, Vision-Language Models, Multimodal Pre-training"
 
 - title: "NVIDIA Nemotron Parse"
-  abstract: "Contributed to NVIDIA's production document parsing model. Open weights, optimized NIM container, deployed via NVIDIA's build platform."
+  abstract: "Co-author of Nemotron Parse 1.1, the productized follow-up to my first-authored Eclair. Open weights, optimized NIM container, deployed via NVIDIA's build platform. v1.1 adds a token-compressed variant (20% speed gain), improved reading order, and longer output sequences."
   link: https://build.nvidia.com/nvidia/nemotron-parse
   tags: "Document Parsing, Production ML, Model Deployment"
+
+- title: "Nemotron VLMs (Nano V2 VL, Nano 3 Omni)"
+  abstract: "NVIDIA's vision-language and omni-modal models for document understanding, long video, and reasoning. Contribute across the stack: pre-training data, post-training (GRPO and on-policy distillation), and long-context evaluation (MMLongBench)."
+  link: https://arxiv.org/abs/2511.03929
+  tags: "Vision-Language Models, Post-Training, Reinforcement Learning"
 
 - title: "Eagle 2 (NVlabs)"
   abstract: "Contributed to NVIDIA's vision-language model. Eagle2-9B matches 70B+ parameter models. Serves as the VLM backbone of the GR00T-N1 robotic foundation model."
