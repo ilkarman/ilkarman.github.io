@@ -91,7 +91,7 @@
   year: 2021
   venue_badge: ICCV
   paper_link: https://arxiv.org/abs/2105.01646
-  description: "Self-training approach for video recognition that leverages motion information to improve performance with limited labeled data."
+  description: "Self-training approach for video recognition that uses motion information to improve performance with limited labeled data."
 
 - title: "Hand Gesture Recognition using 802.11ad mmWave Sensor in the Mobile Device"
   authors: Y Ren, J Lu, A Beletchi, Y Huang, <strong>I Karmanov</strong>, D Dijkman
