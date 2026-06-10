@@ -1,3 +1,6 @@
+- date: 04/2026
+  content: Contributed to <a href="https://arxiv.org/abs/2604.24954">Nemotron 3 Nano Omni</a>, an open multimodal model spanning text, image, video, and audio, with strong long-context document understanding.
+
 - date: 11/2025
   content: <a href="https://arxiv.org/abs/2511.20478">Nemotron Parse 1.1</a> released &mdash; lightweight document parsing model with open weights and optimized NIM container.
 
