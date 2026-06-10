@@ -14,7 +14,7 @@
   tags: "Vision-Language Models, Post-Training, Reinforcement Learning"
 
 - title: "Eagle 2 (NVlabs)"
-  abstract: "Contributed to NVIDIA's vision-language model. Eagle2-9B matches 70B+ parameter models. Serves as the VLM backbone of the GR00T-N1 robotic foundation model."
+  abstract: "Contributed to the token-compression design for dense OCR. Eagle2-9B matches 70B+ models and is the VLM backbone of NVIDIA's GR00T-N1 robotic foundation model."
   link: https://github.com/NVlabs/Eagle
   tags: "Vision-Language Models, Foundation Models"
 
