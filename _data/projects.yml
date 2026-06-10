@@ -18,11 +18,6 @@
   link: https://github.com/NVlabs/Eagle
   tags: "Vision-Language Models, Foundation Models"
 
-- title: "Lung Disease Prediction from Chest X-Rays"
-  abstract: "Co-authored work on lung disease prediction using DenseNet-121 on the NIH Chest X-ray dataset (112K images, 14 pathologies). Published on the Microsoft ML Blog."
-  link: https://learn.microsoft.com/en-us/archive/blogs/machinelearning/using-microsoft-ai-to-build-a-lung-disease-prediction-model-using-chest-x-ray-images
-  tags: "Medical Imaging, Computer Vision"
-
 - title: "Deep Learning Framework Comparisons"
   abstract: "Benchmarking deep learning frameworks (TensorFlow, PyTorch, MXNet, CNTK, Keras, etc.) on common architectures. 1,700+ GitHub stars, contributions from framework creators."
   link: https://github.com/ilkarman/DeepLearningFrameworks
