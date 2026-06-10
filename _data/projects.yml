@@ -9,7 +9,7 @@
   tags: "Document Parsing, Production ML, Model Deployment"
 
 - title: "Nemotron VLMs (Nano V2 VL, Nano 3 Omni)"
-  abstract: "NVIDIA's vision-language and omni-modal models for document understanding, long video, and reasoning. Contribute across the stack: pre-training data, post-training (GRPO and on-policy distillation), and long-context evaluation (MMLongBench)."
+  abstract: "NVIDIA's vision-language and omni-modal models (Nano V2 VL, Nano 3 Omni) for document understanding, long video, and reasoning. I work on their post-training (GRPO and on-policy distillation) and long-context evaluation (e.g. MMLongBench); the models build on pre-trained backbones."
   link: https://arxiv.org/abs/2511.03929
   tags: "Vision-Language Models, Post-Training, Reinforcement Learning"
 
