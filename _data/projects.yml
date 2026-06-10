@@ -1,5 +1,5 @@
 - title: "Eclair"
-  abstract: "First author of Eclair, a document-understanding model that extracts formatted text, tables, formulas, and reading order. Asymmetric design (larger vision encoder, lightweight decoder), no positional embeddings in the decoder, multi-token prediction, and a single prompt-controlled output format. Adopted across NVIDIA's pipelines for pre-training data (50B+ tokens) and VLM distillation; shipped as Nemotron Parse."
+  abstract: "First author of Eclair, a document-understanding model that extracts formatted text, tables, formulas, and reading order. Asymmetric design (larger vision encoder, lightweight decoder), no positional embeddings in the decoder, multi-token prediction, and a single prompt-controlled output format. Adopted across NVIDIA's pipelines for pre-training data (50B+ tokens) and VLM distillation; shipped as Nemotron Parse. Underpinned NVIDIA's Llama Nemotron Nano VL, which ranked first on OCRBench v2."
   link: https://arxiv.org/abs/2502.04223
   tags: "Document AI, Vision-Language Models, Multimodal Pre-training"
 
