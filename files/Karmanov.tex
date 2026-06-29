@@ -34,8 +34,18 @@
 \newcommand{\cventry}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      #1 & #2 \\
+      \textbf{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Grouped company header + stacked roles
+\newcommand{\cvcompany}[1]{
+  \vspace{2pt}\item \textbf{#1} \\[1pt]
+}
+\newcommand{\cvrole}[2]{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -65,67 +75,63 @@
 %----------OVERVIEW----------
 \section{Overview}
 \small{
-Senior Staff Research Scientist at NVIDIA ADLR, working on post-training and evaluation of vision-language models for multimodal reasoning. First author of Eclair, a document-understanding model adopted across NVIDIA's pipelines for pre-training data extraction and VLM distillation, and shipped as Nemotron Parse. Earlier, published at NeurIPS, ICCV, and BMVC while at Qualcomm AI Research. Trained in economics at LSE, with a focus on optimal control and causal inference, before moving into machine learning in 2016.
+Senior Staff Research Scientist at NVIDIA ADLR, working on multimodal architecture, pre-training, post-training, and evaluation for NVIDIA's Nemotron models. First author of Eclair (shipped open-source as Nemotron Parse), a document-understanding model that generated 50B+ tokens for LLM pre-training and underpins NVIDIA's VLM document understanding. Now focused on post-training and RL. Earlier, published at NeurIPS, ICCV, and BMVC at Qualcomm AI Research. Came to machine learning in 2016 from economics: an MSc at LSE focused on optimal control and causal inference, and development-economics research at the International Growth Centre (Oxford and LSE).
 }
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \begin{itemize}[leftmargin=0.15in, label={}]
 
-    \cventry
-      {NVIDIA ADLR, Zurich}{Mar 2025 -- present}
-      {Senior Staff Research Scientist}{}
+    \cvcompany{NVIDIA ADLR, Zurich}
+      \cvrole{Senior Staff Research Scientist}{Mar 2025 -- present}
       \begin{itemize}
-        \item Post-train and evaluate NVIDIA's vision-language models, Nemotron Nano V2 VL and Nemotron 3 Nano Omni, built on pre-trained LLM and vision-encoder backbones
-        \item Run multi-node distributed post-training in PyTorch (100+ GPUs, Megatron/NeMo): GRPO and on-policy distillation for multimodal and long-context reasoning (e.g.\ MMLongBench), with reward and objective design for visual grounding
+        \item Made the case for RL post-training on Nemotron VL and drove a first GRPO proof-of-concept with the systems team, showing it improved the model; this seeded the team's standard RL pipeline
+        \item Improved RL training by inspecting evaluation failures and turning them into better rewards and data; on MMLongBench-Doc this made us the top model under 10B (as of mid-2026)
+        \item Exploring multi-teacher on-policy distillation: letting a smaller student learn answer-correctness from higher-capacity teachers without inheriting a reasoning style it cannot support
       \end{itemize}
-
-    \cventry
-      {NVIDIA ADLR, Zurich}{Sep 2022 -- Feb 2025}
-      {Staff Research Scientist}{}
+      \cvrole{Staff Research Scientist}{Sep 2022 -- Feb 2025}
       \begin{itemize}
-        \item First author of Eclair, a document-understanding model that extracts formatted text, tables, formulas, and reading order. Shipped open-source as Nemotron Parse and adopted across NVIDIA's pipelines for pre-training data (50B+ tokens) and VLM distillation; it underpinned NVIDIA's Llama Nemotron Nano VL, which ranked first on the OCRBench v2 benchmark
+        \item Contributed to multimodal pre-training and architecture design for Nemotron (LLM and VLM)
+        \item First author of Eclair, a document-understanding model that extracts formatted text, tables, formulas, and reading order. Shipped open-source as Nemotron Parse and adopted across NVIDIA's pipelines for pre-training data (50B+ tokens) and VLM distillation; it underpinned NVIDIA's Llama Nemotron Nano VL, which topped OCRBench v2 on release
         \item Led the model's design: an asymmetric architecture (larger vision encoder, lightweight decoder), no positional embeddings in the decoder, multi-token prediction to reduce decoding steps, and a single prompt-controlled output format spanning text, layout, and semantic classes
-        \item Contributed to the token-compression design for dense OCR in Eagle 2 (NeurIPS 2025). Mentored two interns (both later joined full-time)
       \end{itemize}
 
-    \cventry
-      {Qualcomm AI Research, Amsterdam}{2021 -- 2022}
-      {Staff Research Scientist}{}
+    \cvcompany{Qualcomm AI Research, Amsterdam}
+      \cvrole{Staff Research Scientist}{Dec 2021 -- Jul 2022}
       \begin{itemize}
         \item Developed hardware-efficient architectures for 4K video-to-video processing (denoising on device)
         \item Efficient Mixture-of-Experts architecture for conditional computation (BMVC 2022)
       \end{itemize}
-
-    \cventry
-      {Qualcomm AI Research, Amsterdam}{2020 -- 2021}
-      {Senior Research Scientist}{}
+      \cvrole{Senior Research Scientist}{Feb 2020 -- Nov 2021}
       \begin{itemize}
-        \item Created the first weakly-supervised approach for 3D person-localisation on video and WiFi data. Published at NeurIPS 2021 (with Max Welling) and IEEE GLOBECOM 2021 (first author)
-        \item Video recognition via motion-augmented self-training (ICCV 2021, with Cees Snoek)
+        \item Created the first weakly-supervised approach for 3D person-localisation on video and WiFi data, published at NeurIPS 2021 (with Max Welling) and IEEE GLOBECOM 2021 (first author)
+        \item Video recognition via motion-augmented self-training (ICCV 2021)
       \end{itemize}
 
-    \cventry
-      {Microsoft, London}{2018 -- 2020}
-      {Senior Applied Scientist}{}
+    \cvcompany{Microsoft, London}
+      \cvrole{Senior Applied Scientist}{Dec 2018 -- Jan 2020}
       \begin{itemize}
         \item Applied computer vision across industry problems: self- and fully-supervised segmentation (medical and seismic imaging), object detection and counting, and real-time video action recognition
-        \item Synthetic-data pipelines using inductive biases (low-frequency and shape signals) to improve generalisation
+        \item Built synthetic-data pipelines to improve model generalisation
       \end{itemize}
-
-    \cventry
-      {Microsoft, London}{2016 -- 2018}
-      {Applied Scientist}{}
+      \cvrole{Applied Scientist}{Jun 2016 -- Nov 2018}
       \begin{itemize}
-        \item Collaborated with MSR on Z3 theorem-prover for plane-gate allocations (Dubai Airport)
+        \item Collaborated with MSR on Z3 theorem-prover for plane-gate allocations (Mixed Integer Linear Programming)
         \item Created \href{https://github.com/ilkarman/DeepLearningFrameworks}{DeepLearningFrameworks}: benchmarking deep learning frameworks across single-node and multi-node on Azure. 1,700+ GitHub stars, contributions from framework creators
       \end{itemize}
 
-    \cventry
-      {Charles River Associates; IGC (Oxford); LSE}{2013 -- 2016}
-      {Research Economist / Consultant}{}
+    \cvcompany{Charles River Associates, London}
+      \cvrole{Consultant}{May 2014 -- Jun 2016}
       \begin{itemize}
-        \item Econometrics for antitrust litigation (Charles River Associates); firm-capability and trade research at the Oxford centre directed by Prof.\ Paul Collier (IGC); and causal-inference (diff-in-diff) work as RA to Prof.\ Frank Cowell (LSE), leading to a published paper (Costa-Font \& Cowell, 2015)
+        \item Econometrics for antitrust and M\&A cases: regression specification and robustness, mathematical programming, and geospatial algorithms
+        \item Initiated the first data-scientist job-role within the department
+      \end{itemize}
+
+    \cvcompany{International Growth Centre, University of Oxford}
+      \cvrole{Research Economist}{Oct 2013 -- May 2014}
+      \begin{itemize}
+        \item Applied econometrics for development economics at the IGC, the Oxford and LSE research centre funded by the UK government, under the firm-capabilities theme (large firms, entrepreneurship, trade) directed by Prof.\ Paul Collier
+        \item Performed fieldwork in India, Pakistan, and Uganda with local researchers, presenting findings to policymakers
       \end{itemize}
 
   \end{itemize}
@@ -133,11 +139,9 @@ Senior Staff Research Scientist at NVIDIA ADLR, working on post-training and eva
 %-----------PUBLICATIONS-----------
 \section{Publications}
   \begin{itemize}[leftmargin=0.15in, label={}]
-    \cvpub{Authors incl.\ \textbf{I Karmanov}. NVIDIA Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence. arXiv 2026}
     \cvpub{\textbf{I Karmanov}, A Deshmukh, L Voegtle, P Fischer, K Chumachenko, T Roman, J Seppanen, J Parmar, J Jennings, A Tao, K Sapra. Eclair: Extracting Content and Layout with Integrated Reading Order for Documents. arXiv 2025}
     \cvpub{K Chumachenko, A Deshmukh, J Seppanen, \textbf{I Karmanov}, C Chen, L Voegtle, P Fischer, et al. Nemotron Parse 1.1. arXiv 2025}
-    \cvpub{140+ authors incl.\ \textbf{I Karmanov}. NVIDIA Nemotron Nano V2 VL. arXiv 2025}
-    \cvpub{199 authors incl.\ \textbf{I Karmanov}. Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models. arXiv 2025}
+    \cvpub{Contributing author on NVIDIA tech reports: Nemotron 3 Nano Omni (arXiv 2026), Nemotron Nano V2 VL (arXiv 2025), and Nemotron-H Hybrid Mamba-Transformer (arXiv 2025)}
     \cvpub{Z Li, G Chen, S Liu, ... \textbf{I Karmanov}, L Voegtle, P Fischer, ... Z Yu. Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models. NeurIPS 2025}
     \cvpub{A Royer, \textbf{I Karmanov}, A Skliar, B Ehteshami Bejnordi, T Blankevoort. Revisiting Single-gated Mixtures of Experts. BMVC 2022}
     \cvpub{FG Zanjani, \textbf{I Karmanov}, H Ackermann, D Dijkman, S Merlin, M Welling, F Porikli. Modality-Agnostic Topology Aware Localization. NeurIPS 2021}
@@ -161,15 +165,12 @@ Reviewer for NeurIPS, ICLR, and ICML.
 %-----------EDUCATION-----------
 \section{Education}
   \begin{itemize}[leftmargin=0.15in, label={}]
-    \cventry
-      {London School of Economics}{2012 -- 2013}
-      {MSc Economics}{}
+    \cvcompany{London School of Economics}
+      \cvrole{MSc Economics}{2012 -- 2013}
       \begin{itemize}
         \item Thesis: Optimal Control Analysis for Tax Avoidance. Modelling a firm's optimisation problem in an infinite horizon setting, introducing reputation as an accumulated asset, solved with Hamiltonian in an optimal-control setting. Advisor: Prof.\ Frank Cowell
       \end{itemize}
-    \cventry
-      {London School of Economics}{2009 -- 2012}
-      {BSc Economics, First Class Honours}{}
+      \cvrole{BSc Economics, First Class Honours}{2009 -- 2012}
   \end{itemize}
 
 \end{document}

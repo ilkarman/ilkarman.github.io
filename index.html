@@ -6,7 +6,7 @@ publications: passive
 projects: passive
 personal: passive
 talks: passive
-description: "Researcher at NVIDIA. Economist turned ML researcher. Vision-language models, post-training, and multimodal reasoning. Previously at Qualcomm AI Research and Microsoft."
+description: "Researcher at NVIDIA. Economist turned ML researcher. Vision-language models: architecture, pre-training, post-training, and multimodal reasoning. Previously at Qualcomm AI Research and Microsoft."
 ---
 
 <div class="hero">
@@ -26,13 +26,19 @@ description: "Researcher at NVIDIA. Economist turned ML researcher. Vision-langu
 		</p>
 
 		<p>
-			At NVIDIA, I work on post-training and evaluation of vision-language models for multimodal reasoning.
+			At NVIDIA, I work across the architecture, pre-training, post-training, and evaluation of vision-language models for multimodal reasoning.
 			I first-authored <a href="https://arxiv.org/abs/2502.04223">Eclair</a>, a document-understanding model used across NVIDIA's pre-training pipelines (including
 			<a href="https://arxiv.org/abs/2504.03624">Nemotron-H</a>), and have contributed to
 			<a href="https://arxiv.org/abs/2501.14818">Eagle 2</a>,
 			<a href="https://arxiv.org/abs/2511.03929">Nemotron Nano V2 VL</a> and
 			<a href="https://arxiv.org/abs/2604.24954">Nemotron 3 Nano Omni</a>, working on GRPO post-training and on-policy distillation. Eclair shipped as
 			<a href="https://build.nvidia.com/nvidia/nemotron-parse">Nemotron Parse</a> with open weights.
+		</p>
+
+		<p>
+			Currently I work on multi-teacher on-policy distillation, building on on-policy distillation work in our group:
+			whether the transfer of answer-correctness can be separated from the transfer of reasoning style, so a
+			higher-capacity domain teacher can train a smaller student without forcing a reasoning style the student cannot support.
 		</p>
 
 		<p>
@@ -57,7 +63,7 @@ description: "Researcher at NVIDIA. Economist turned ML researcher. Vision-langu
 		</p>
 
 		<p class="research-interests">
-			<strong>Research interests:</strong> multimodal reasoning, post-training (RL and distillation) for vision-language models, long-context and document understanding, model evaluation.
+			<strong>Research interests:</strong> multimodal model design and architecture, pre-training and post-training (RL and distillation) for vision-language models, long-context and document understanding, model evaluation.
 		</p>
 	</div>
 </div>
@@ -68,7 +74,7 @@ description: "Researcher at NVIDIA. Economist turned ML researcher. Vision-langu
 		<a href="https://arxiv.org/abs/2502.04223" class="highlight-card featured" target="_blank">
 			<span class="highlight-badge">First Author</span>
 			<h3>Eclair</h3>
-			<p>Document-understanding model extracting formatted text, tables, and reading order. Shipped as Nemotron Parse; underpinned NVIDIA’s Llama Nemotron Nano VL, which ranked #1 on OCRBench v2.</p>
+			<p>Document-understanding model extracting formatted text, tables, and reading order. Shipped as Nemotron Parse; underpinned NVIDIA’s Llama Nemotron Nano VL, which topped OCRBench v2 on release.</p>
 			<span class="highlight-venue">arXiv 2025</span>
 		</a>
 		<a href="https://arxiv.org/abs/2511.03929" class="highlight-card featured" target="_blank">
