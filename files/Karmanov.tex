@@ -85,15 +85,16 @@ Senior Staff Research Scientist at NVIDIA ADLR, working on multimodal architectu
     \cvcompany{NVIDIA ADLR, Zurich}
       \cvrole{Senior Staff Research Scientist}{Mar 2025 -- present}
       \begin{itemize}
-        \item Made the case for RL post-training on Nemotron VL and drove a first GRPO proof-of-concept with the systems team, showing it improved the model; this seeded the team's standard RL pipeline
-        \item Improved RL training by inspecting evaluation failures and turning them into better rewards and data; on MMLongBench-Doc this made us the top model under 10B (as of mid-2026)
-        \item Exploring multi-teacher on-policy distillation: letting a smaller student learn answer-correctness from higher-capacity teachers without inheriting a reasoning style it cannot support
+        \item Work on post-training for Nemotron multimodal models, using synthetic data, SFT, RL and distillation to improve existing capabilities and build new ones. Start from evaluation failures, work out why the model is failing, and design and test the intervention needed to fix it
+        \item Design training curricula and adapt algorithms to the task, including how methods are sequenced and how objectives, rewards, sampling and optimisation are defined
+        \item Made the case for RL post-training and drove the first GRPO proof of concept with the systems team; it improved the model and became the starting point for the team's standard RL pipeline
+        \item Current research focuses on multi-teacher distillation for smaller models and adapting RL to multimodal and long-context tasks
       \end{itemize}
       \cvrole{Staff Research Scientist}{Sep 2022 -- Feb 2025}
       \begin{itemize}
-        \item Contributed to multimodal pre-training and architecture design for Nemotron (LLM and VLM)
-        \item First author of Eclair, a document-understanding model that extracts formatted text, tables, formulas, and reading order. Shipped open-source as Nemotron Parse and adopted across NVIDIA's pipelines for pre-training data (50B+ tokens) and VLM distillation; it underpinned NVIDIA's Llama Nemotron Nano VL, which topped OCRBench v2 on release
-        \item Led the model's design: an asymmetric architecture (larger vision encoder, lightweight decoder), no positional embeddings in the decoder, multi-token prediction to reduce decoding steps, and a single prompt-controlled output format spanning text, layout, and semantic classes
+        \item Led Eclair from architecture and data through training and evaluation, and was first author of the resulting paper. Released as the open-source Nemotron Parse, it was adopted across NVIDIA to generate 50B+ pre-training tokens and distil VLMs; it also underpinned Llama Nemotron Nano VL, which topped OCRBench v2 on release
+        \item Designed its asymmetric architecture: a larger vision encoder with a lightweight decoder, no decoder positional embeddings, multi-token prediction, and one prompt-controlled output format spanning text, layout and semantic classes
+        \item Contributed more broadly to multimodal pre-training and architecture development for Nemotron LLMs and VLMs
       \end{itemize}
 
     \cvcompany{Qualcomm AI Research, Amsterdam}
