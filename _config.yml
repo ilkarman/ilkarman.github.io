@@ -5,3 +5,10 @@ permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
 images_personal_url: "/img/personal/"
 images_projects_url: "/img/projects/"
+
+# Standalone code project kept in this repo but left out of the site build.
+exclude:
+  - nano-llama-from-scratch
+  - Gemfile
+  - Gemfile.lock
+  - vendor
